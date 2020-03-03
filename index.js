@@ -44,8 +44,8 @@ socket.on('message', msg => {
         nyanjis.set(match[1], match[2])
         say("nyaaaaaa!")
     } else {
-        let ms = [...msg.message.matchAll(nyanjiPattern)]
-        for (const nyan of ms) {
+        let nyan
+        while ((nyan = nyanjiPattern.exec(msg.message)) !== null) {
             let n = nyanjis.get(nyan[1])
             if(n !== undefined) {
                 say(n + " " + "nya~")
