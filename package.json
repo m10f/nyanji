@@ -1,0 +1,22 @@
+{
+  "name": "nyanji",
+  "version": "0.1.0",
+  "description": "Nekocafe chatbot",
+  "preferGlobal": true,
+  "directories": {
+    "bin": "./bin"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "bot"
+  ],
+  "author": "James LaMar",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "socket.io-client": "^1.7.3"
+  }
+}
